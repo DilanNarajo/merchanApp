@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>reports</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<div class="phone-frame app-card" style="max-width:360px;margin:24px auto;">
+<img src="assets/logo.png" class="logo" />
+<h3 style="margin:0 0 12px">Mis reportes</h3>
+
+
+<ion-list lines="none">
+<ion-item *ngFor="let r of reports" [routerLink]="['/report', r.id]" class="app-card" style="margin-bottom:10px;">
+<ion-thumbnail slot="start" *ngIf="r.photoDataUrl">
+<img [src]="r.photoDataUrl"/>
+</ion-thumbnail>
+<ion-label>
+<div style="font-weight:600">{{ r.address || 'Sin dirección' }}</div>
+<div class="small-muted">{{ r.createdAt | date:'short' }}</div>
+</ion-label>
+</ion-item>
+</ion-list>
+
+
+<ion-button class="app-btn" expand="block" routerLink="/report-mode">Nuevo reporte</ion-button>
+</div>
+</ion-content>

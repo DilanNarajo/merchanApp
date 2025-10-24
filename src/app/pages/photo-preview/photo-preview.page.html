@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>photo-preview</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="center">
+<div class="phone-frame app-card" style="width:360px;">
+<img src="assets/logo.png" class="logo" />
+<h3>Vista previa</h3>
+<div class="small-muted">Confirma la imagen antes de guardar</div>
+
+
+<div style="margin:10px 0;overflow:hidden;border-radius:14px;">
+<img [src]="photo" *ngIf="photo" style="width:100%"/>
+</div>
+
+
+<ion-button class="app-btn" expand="block" (click)="save()">Guardar</ion-button>
+</div>
+</ion-content>

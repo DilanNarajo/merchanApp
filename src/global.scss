@@ -35,3 +35,51 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+
+html, body, ion-app, ion-content {
+background: radial-gradient(1200px 800px at 50% -20%, #1b2230 0%, #0a0d12 60%, #07090d 100%) !important;
+color: var(--ion-text-color);
+}
+
+
+ion-header, ion-toolbar {
+--background: transparent;
+--border-color: transparent;
+}
+
+
+.app-card {
+background: var(--ion-color-card);
+border-radius: var(--app-radius);
+box-shadow: 0 10px 30px rgba(0,0,0,.45);
+padding: 18px;
+}
+
+
+.app-btn {
+--background: var(--ion-color-primary);
+--background-focused: #1862cc;
+--background-activated: #1558b8;
+--color: #fff;
+--border-radius: 18px;
+height: 46px;
+font-weight: 600;
+}
+
+
+.small-muted { color: var(--ion-muted); font-size: 12px; }
+.center { display: grid; place-items: center; text-align: center; }
+
+
+.logo {
+width: 108px; height: auto; margin: 12px auto 20px;
+}
+
+
+.phone-frame {
+border: 1px solid rgba(255,255,255,.06);
+border-radius: 30px;
+padding: 18px 14px 24px;
+background: linear-gradient(180deg, #0d1118, #0a0e14);
+}

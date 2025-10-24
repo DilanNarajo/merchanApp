@@ -1,2 +1,15 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+:root {
+/** Colores base **/
+--ion-color-primary: #1f7aff; /* acento botones */
+--ion-color-primary-contrast: #ffffff;
+--ion-color-dark-bg: #0a0d12; /* fondo principal */
+--ion-color-card: #10151d; /* tarjetas */
+--ion-text-color: #e6ecf3;
+--ion-muted: #8b99ab;
+
+
+/** Bordes y radios **/
+--app-radius: 22px;
+}

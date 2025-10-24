@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>permissions</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="center">
+<div class="phone-frame app-card" style="width:360px;">
+<img src="assets/logo.png" class="logo" />
+<h3>Permisos de ubicación</h3>
+
+
+<ion-button class="app-btn" expand="block" (click)="ask()">Permitir ubicación</ion-button>
+<ion-button class="app-btn" expand="block" fill="outline" routerLink="/camera" style="margin-top:10px;">Tomar foto</ion-button>
+<ion-button class="app-btn" expand="block" fill="outline" routerLink="/reports" style="margin-top:10px;">Guardar</ion-button>
+</div>
+</ion-content>

@@ -1,11 +1,8 @@
 import { Component } from '@angular/core';
-import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
+import { ReportsService } from './core/reports.service';
 
-@Component({
-  selector: 'app-root',
-  templateUrl: 'app.component.html',
-  imports: [IonApp, IonRouterOutlet],
-})
+
+@Component({ selector: 'app-root', template: '<ion-app><router-outlet></router-outlet></ion-app>' })
 export class AppComponent {
-  constructor() {}
+constructor(reports: ReportsService){ reports.init(); }
 }
