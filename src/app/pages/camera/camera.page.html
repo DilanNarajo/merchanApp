@@ -1,19 +1,11 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>camera</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true" class="center">
 <div class="phone-frame app-card" style="width:340px;">
 <img src="assets/logo.png" class="logo" />
 <h3>Tomar foto</h3>
 
-
 <div *ngIf="photo" style="margin:10px 0;overflow:hidden;border-radius:12px;">
 <img [src]="photo" style="width:100%" />
 </div>
-
 
 <ion-button class="app-btn" expand="block" (click)="shoot()">
 <ion-icon name="camera" slot="start"></ion-icon> Capturar

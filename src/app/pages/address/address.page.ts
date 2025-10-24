@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { ReportsService } from 'src/app/core/reports.service';
+import { ReportsService } from '../../core/reports.service';
 
 
-@Component({ selector: 'app-address', templateUrl: './address.page.html' })
+@Component({ 
+  selector: 'app-address', 
+  templateUrl: './address.page.html',
+  standalone: false
+})
 export class AddressPage {
 address = '';
 photo?: string;

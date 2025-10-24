@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SplashPage } from './splash.page';
+import { ReportDetailPage } from './report-detail.page';
 import { IonicModule } from '@ionic/angular';
 
 @NgModule({
@@ -8,7 +8,7 @@ import { IonicModule } from '@ionic/angular';
     CommonModule,
     IonicModule
   ],
-  declarations: [SplashPage],
-  exports: [SplashPage]
+  declarations: [ReportDetailPage],
+  exports: [ReportDetailPage]
 })
-export class SplashPageModule {}
+export class ReportDetailPageModule {}

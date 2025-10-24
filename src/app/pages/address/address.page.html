@@ -1,27 +1,23 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>address</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
 <div class="phone-frame app-card" style="max-width:360px;margin:24px auto;">
 <img src="assets/logo.png" class="logo" />
 <h3>Dirección</h3>
 
-
 <ion-item class="app-card" lines="none" style="margin-bottom:12px;">
 <ion-label position="stacked">Dirección</ion-label>
-<ion-input [(ngModel)]="address" placeholder="Calle 00 # 00-00"></ion-input>
+<ion-input [(ngModel)]="address" placeholder="..."></ion-input>
 </ion-item>
 
-
-<ion-button class="app-btn" expand="block" (click)="takePhoto()">Tomar foto</ion-button>
-<ion-button class="app-btn" expand="block" fill="outline" (click)="save()" style="margin-top:10px;">Guardar</ion-button>
-
+<ion-button class="app-btn" expand="block" (click)="takePhoto()">TOMAR FOTO</ion-button>
+<ion-button class="app-btn" expand="block" fill="outline" (click)="save()" style="margin-top:10px;">GUARDAR</ion-button>
 
 <div *ngIf="photo" style="margin-top:14px;overflow:hidden;border-radius:14px;">
 <img [src]="photo" style="width:100%" />
+</div>
+
+<!-- Icono de flecha hacia abajo -->
+<div class="arrow-down">
+  <ion-icon name="chevron-down"></ion-icon>
 </div>
 </div>
 </ion-content>

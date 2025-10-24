@@ -1,10 +1,23 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { SplashPage } from './splash.page';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
-@NgModule({
-  imports: [CommonModule],
-  declarations: [SplashPage],
-  exports: [SplashPage]
+@Component({
+  selector: 'app-splash',
+  templateUrl: './splash.page.html',
+  styleUrls: ['./splash.page.scss'],
+  standalone: false
 })
-export class SplashPageModule {}
+export class SplashPage implements OnInit {
+  constructor(private router: Router) {}
+  
+  ngOnInit() {
+    // Navegación automática después de 3 segundos
+    setTimeout(() => {
+      this.go();
+    }, 3000);
+  }
+  
+  go() {
+    this.router.navigateByUrl('/reports');
+  }
+}

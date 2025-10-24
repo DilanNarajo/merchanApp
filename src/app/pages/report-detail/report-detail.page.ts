@@ -1,10 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ReportsService } from 'src/app/core/reports.service';
-import { Report } from 'src/app/core/reports.model';
+import { ReportsService } from '../../core/reports.service';
+import { Report } from '../../core/reports.model';
 
 
-@Component({ selector: 'app-report-detail', templateUrl: './report-detail.page.html' })
+@Component({ 
+  selector: 'app-report-detail', 
+  templateUrl: './report-detail.page.html',
+  standalone: false
+})
 export class ReportDetailPage implements OnInit {
 report?: Report;
 constructor(private route: ActivatedRoute, private router: Router, private reportsSrv: ReportsService){}

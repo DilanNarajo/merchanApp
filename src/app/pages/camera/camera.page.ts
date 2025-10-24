@@ -1,8 +1,12 @@
 import { Component } from '@angular/core';
-import { ReportsService } from 'src/app/core/reports.service';
+import { ReportsService } from '../../core/reports.service';
 
 
-@Component({ selector: 'app-camera', templateUrl: './camera.page.html' })
+@Component({ 
+  selector: 'app-camera', 
+  templateUrl: './camera.page.html',
+  standalone: false
+})
 export class CameraPage {
 photo?: string;
 constructor(private reportsSrv: ReportsService) {}

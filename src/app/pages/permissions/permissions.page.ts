@@ -1,8 +1,12 @@
 import { Component } from '@angular/core';
-import { ReportsService } from 'src/app/core/reports.service';
+import { ReportsService } from '../../core/reports.service';
 
 
-@Component({ selector: 'app-permissions', templateUrl: './permissions.page.html' })
+@Component({ 
+  selector: 'app-permissions', 
+  templateUrl: './permissions.page.html',
+  standalone: false
+})
 export class PermissionsPage {
 constructor(private reportsSrv: ReportsService) {}
 async ask(){

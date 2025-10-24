@@ -1,9 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { ReportsService } from 'src/app/core/reports.service';
-import { Report } from 'src/app/core/reports.model';
+import { ReportsService } from '../../core/reports.service';
+import { Report } from '../../core/reports.model';
 
 
-@Component({ selector: 'app-reports', templateUrl: './reports.page.html' })
+@Component({ 
+  selector: 'app-reports', 
+  templateUrl: './reports.page.html',
+  standalone: false
+})
 export class ReportsPage implements OnInit {
 reports: Report[] = [];
 constructor(private reportsSrv: ReportsService) {}
